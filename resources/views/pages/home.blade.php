@@ -5,9 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>laravel-one-to-many</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightgray;
+        }
+        header, footer{
+            background-color: gray;
+        }
 
+    </style>
 </head>
 <body>
-    ciao
+    <header>Questo é header</header>
+    il main
+    <footer>Questo é footer</footer>
 </body>
 </html>
