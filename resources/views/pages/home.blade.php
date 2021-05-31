@@ -22,7 +22,18 @@
 </head>
 <body>
     <header>Questo é header</header>
-    il main
+    <ul>
+
+        @foreach ($employee as $item)
+        <li>
+            {{$item->lastname}}
+            @foreach ($item -> task as $i)
+                {{$i->title}}
+
+            @endforeach
+        </li>
+        @endforeach
+    </ul>
     <footer>Questo é footer</footer>
 </body>
 </html>
