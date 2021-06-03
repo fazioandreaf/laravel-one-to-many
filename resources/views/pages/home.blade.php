@@ -17,6 +17,10 @@
         header, footer{
             background-color: gray;
         }
+        span{
+            background-color: lightblue;
+            color: white;
+        }
 
     </style>
 </head>
@@ -26,8 +30,10 @@
 
         @foreach ($employee as $item)
         <li>
+            <span>Lastname</span>
             {{$item->lastname}}
-            @foreach ($item -> task as $i)
+            <span>Titolo</span>
+            @foreach ($item -> tasks as $i)
                 {{$i->title}}
 
             @endforeach
